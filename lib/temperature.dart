@@ -4,20 +4,20 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
-class TemperaturePage extends StatefulWidget {
-  const TemperaturePage({Key? key}) : super(key: key);
+class TemperatureScreen extends StatefulWidget {
+  const TemperatureScreen({Key? key}) : super(key: key);
 
   @override
-  _TemperaturePageState createState() => _TemperaturePageState();
+  _TemperatureScreenState createState() => _TemperatureScreenState();
 }
 
-class _TemperaturePageState extends State<TemperaturePage> {
+class _TemperatureScreenState extends State<TemperatureScreen> {
   double heating = 12;
   double fan = 15;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo.shade50,
+      backgroundColor: Colors.green.shade50,
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.only(top: 18, left: 24, right: 24),
@@ -34,14 +34,14 @@ class _TemperaturePageState extends State<TemperaturePage> {
                     },
                     child: const Icon(
                       Icons.arrow_back_ios,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.green,
                     ),
                   ),
                   const RotatedBox(
                     quarterTurns: 135,
                     child: Icon(
                       Icons.bar_chart_rounded,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.green,
                       size: 28,
                     ),
                   )
@@ -56,9 +56,9 @@ class _TemperaturePageState extends State<TemperaturePage> {
                       radius: 180,
                       lineWidth: 14,
                       percent: 0.75,
-                      progressColor: Colors.deepPurpleAccent,
+                      progressColor: Colors.green,
                       center: const Text(
-                        '26\u00B0',
+                        '26°',
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
@@ -112,9 +112,9 @@ class _TemperaturePageState extends State<TemperaturePage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: const [
-                                Text('0\u00B0'),
-                                Text('15\u00B0'),
-                                Text('30\u00B0'),
+                                Text('0°'),
+                                Text('15°'),
+                                Text('30°'),
                               ],
                             ),
                           )
@@ -190,7 +190,7 @@ class _TemperaturePageState extends State<TemperaturePage> {
         Container(
           padding: const EdgeInsets.all(18),
           decoration: BoxDecoration(
-            color: isActive ? Colors.indigo : Colors.white,
+            color: isActive ? Colors.green : Colors.white,
             borderRadius: BorderRadius.circular(18),
           ),
           child: Image.asset(
@@ -218,9 +218,9 @@ class _TemperaturePageState extends State<TemperaturePage> {
         horizontal: 32,
       ),
       decoration: BoxDecoration(
-        color: isActive ? Colors.indigo : Colors.transparent,
+        color: isActive ? Colors.green : Colors.transparent,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.indigo),
+        border: Border.all(color: Colors.green),
       ),
       child: Text(
         title,

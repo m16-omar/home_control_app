@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Smart Home App',
+      title: 'Flutter Home Control App',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.green,
       ),
       home: const HomePage(),
       debugShowCheckedModeBanner: true,
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo.shade50,
+      backgroundColor: Colors.green.shade50,
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.only(top: 18, left: 24, right: 24),
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                     'HI ISAH',
                     style: TextStyle(
                       fontSize: 18,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.green,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                     quarterTurns: 135,
                     child: Icon(
                       Icons.bar_chart_rounded,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.green,
                       size: 28,
                     ),
                   )
@@ -106,13 +106,13 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const TemperaturePage(),
+                                builder: (context) => const TemperatureScreen(),
                               ),
                             );
                           },
                           icon: 'assets/images/temperature.png',
                           title: 'TEMPERATURE',
-                          color: Colors.deepPurpleAccent,
+                          color: Colors.green,
                           fontColor: Colors.white,
                         ),
                       ],
