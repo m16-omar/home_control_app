@@ -205,7 +205,7 @@ class DashboardScreen extends StatelessWidget {
                 const SizedBox(width: 40),
                 _buildIconButton(Icons.car_repair, 'Trunk', Colors.purple),
                 const SizedBox(width: 40),
-                _buildIconButton(Icons.directions_car, 'Share', Colors.purple),
+                _buildIconButton(Icons.car_rental, 'Share', Colors.purple),
               ],
             ),
             const SizedBox(height: 2),
