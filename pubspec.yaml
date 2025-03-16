@@ -22,4 +22,5 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/icons/car_trunk.svg 
+    - assets/icons/car_trunk.svg
+    - assets/images/driver.png 
